@@ -11,11 +11,11 @@ public class App {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(bWidth, bHeight);
 
-        FlappyBird flappybird = new FlappyBird();
+        FlappyBird flappyBird = new FlappyBird();
 
-        frame.add(flappybird);
+        frame.add(flappyBird);
         frame.pack();
-
+        flappyBird.requestFocus();
         frame.setVisible(true);
 
     }
