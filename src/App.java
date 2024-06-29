@@ -6,10 +6,17 @@ public class App {
         int bHeight = 640;
 
         JFrame frame = new JFrame("Flappy Bird");
-        frame.setVisible(true);
         frame.setLocationRelativeTo(null);
         frame.setResizable(false);
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setSize(bWidth, bHeight);
+
+        FlappyBird flappybird = new FlappyBird();
+
+        frame.add(flappybird);
+        frame.pack();
+
+        frame.setVisible(true);
+
     }
 }
